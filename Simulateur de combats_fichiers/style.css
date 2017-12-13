@@ -1,0 +1,278 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	font-family:"Trebuchet MS", Arial;
+	font-size:14px;
+	background-color:#F2DFB9;
+	color:#333;
+}
+
+body{
+	background-image:url('img/fond_body.jpg');
+	background-repeat:repeat-x;
+	background-position:top;
+}
+
+header{
+	width:900px;
+	height:160px;
+	margin:0 auto 10px auto;
+	background-image:url('img/head.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+header ul li{
+	display:inline-block;
+	margin:124px 20px 0 20px;
+	padding:6px 0 0 40px;
+	background-repeat:no-repeat;
+	background-position:left middle;
+	height:35px;
+}
+
+header ul li a{
+	color:#fff;
+	font-weight:bold;
+	font-size:15px;
+	text-shadow:#000 1px 1px 0px,#000 -1px -1px 0px;
+	text-decoration:none;
+}
+
+#contenu {
+	width:860px;
+	padding:0 20px;
+	background-color:#F9F4E1;
+	margin:0 auto;
+	background-image:url('img/contenu_middle.gif');
+	background-repeat:repeat-y;
+	background-position:top center;
+}
+
+#contenu_top {
+	height:11px;
+	width:900px;
+	margin:0 auto;
+	background-image:url('img/contenu_top.gif');
+	background-repeat:no-repeat;
+	background-position:bottom center;
+}
+
+#contenu_bot {
+	height:39px;
+	width:900px;
+	margin:0 auto;
+	background-image:url('img/contenu_bot.gif');
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+table{
+	display:block;
+	width:618px;
+	margin:0 auto;
+	background-image:url('img/table_middle.png');
+	background-repeat:repeat-y;
+	background-position:top center;
+	padding:20px 20px 0 20px;
+	border-spacing:5px;
+	border-collapse:separate;
+}
+
+table td{
+	font-size:14px;
+	text-align:center;
+	background-color:#EACB8D;
+	padding:5px 2px;
+	width:47px;
+}
+
+.tbl_top {
+	width:658px;
+	margin:0 auto;
+	background-image:url('img/table_top.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	height:47px;
+	position:relative;
+	top:30px;
+	text-align:center;
+	padding:18px 0 0 0;
+}
+
+.tbl_top h2{
+	display:inline;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.tbl_bot {
+	width:658px;
+	margin:0 auto;
+	background-image:url('img/table_bottom.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	height:30px;
+}
+
+table .first_col{
+	background-image:url('img/metal.jpg');
+	color:#fff;
+	font-weight:bold;
+	width:100px;
+}
+
+#tbl_batailles_fin{
+	display:none;
+}
+
+#tbl_batailles_fin_displayed{
+	display:block;
+}
+
+#resultats_moyens th{
+	background-image:url('img/th.gif');
+	background-position:center top;
+	background-repeat:no-repeat;
+	color:#fff;
+	height:26px;
+	font-weight:bold;
+	width:609px;
+	padding:0 0 10px 0;
+}
+
+#resultats_moyens .sous_th {
+	background-image:url('img/sous_tab.gif');
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	color:#fff;
+	height:18px;
+	font-weight:bold;
+	padding:0;
+	width:50%;
+}
+
+#resultats_moyens .sous_sous_th {
+	font-weight:bold;
+	width:16.666%;
+}
+
+input {
+	width:34px;
+	text-align:center;
+	font-size:14px;
+	background-color:#F2DFB9;
+	border:1px solid #5F5F5D;
+}
+
+#commerce .first_col{
+	width:180px;
+}
+
+#commerce .nom_colonne{
+	width:266px;
+}
+
+#commerce .commerce_colonne{
+	width:100px;
+}
+
+#commerce .input_nom{
+	width:230px;
+}
+
+#commerce .input_com{
+	width:50px;
+}
+
+#commerce #resultats{
+	padding:10px 10px;
+}
+
+#commerce p{
+	padding:0 10px;
+}
+
+#commerce h3{
+	padding:20px 10px;
+}
+
+#bouton{
+	background-image:url('img/bouton.gif');
+	background-repeat:no-repeat;
+	width:113px;
+	height:26px;
+	text-align:center;
+	padding:15px 0 0 0;
+	margin:0 auto;
+}
+
+#bouton:hover{
+	background-image:url('img/boutonhover.gif');
+	cursor:pointer;
+}
+
+#about{
+	padding:10px 0;
+}
+
+#about h2{
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 10px;
+	height:19px;
+	margin:0 0 15px 0;
+	color:#fff;
+	background-image:url('img/h2.gif');
+	background-repeat:no-repeat;
+}
+
+h3 {
+	font-size:12px;
+	font-weight:bold;
+	padding:10px;
+	text-transform:uppercase;
+	color:#844242;
+}
+
+.notabene{
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#844242;
+}
+
+p{
+	padding:10px;
+	text-align:justify;
+}
+
+#options td {
+	width:auto;
+	text-align:left;
+}
+
+#options p {
+	padding:0;
+}
+
+#about a{
+	color:#416C00;
+}
+
+#infos {
+	position:absolute;
+	width:860px;
+}
+
+#infos p {
+	text-align:center;
+}
+
+#about ul{
+	padding:0 0 0 40px;
+	text-align:justify;
+}

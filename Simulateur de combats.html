@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Simulateur de combats</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="http://citadelle.byethost22.com/img/favicon.png">
+		<link rel="stylesheet" href="Simulateur%20de%20combats_fichiers/style.css"> 
+		<script src="Simulateur%20de%20combats_fichiers/fonctions.js"></script>
+		<!--Mémo : Unites[Att,Def][Soldats,Catapultes][Pv,Duel?][n°]-->
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li style="background-image:url('img/simulateur.gif');"><a href="http://citadelle.byethost22.com/index.php">Batailles</a></li>
+				<li style="background-image:url('img/commerce.png');"><a href="http://citadelle.byethost22.com/commerce.php">Commerce</a></li>
+				<li style="background-image:url('img/about.gif');"><a href="http://citadelle.byethost22.com/about.php">À propos</a></li>
+				<li style="background-image:url('img/contact.gif');"><a href="http://twinoid.com/user/8646226" target="_blank">Contact</a></li>
+			</ul>
+		</header>
+		<div id="contenu_top">
+		</div>		<div id="contenu">
+			<div id="tbl_batailles_ini">
+				<div class="tbl_top">
+					<h2>Combattants</h2>
+				</div>
+				<table>
+					<tbody><tr>
+						<td class="first_col" rowspan="2">Attaquant</td>
+						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier attaquant"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté attaquant"></td>
+					</tr>
+					<tr id="ini_att">
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+					</tr>
+					<tr>
+						<td class="first_col" rowspan="2">Défenseur</td>
+						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier défenseur"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté défenseur"></td>
+					</tr>
+					<tr id="ini_def">
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+						<td><input autocomplete="off" type="text"></td>
+					</tr>
+					<tr>
+						<td class="first_col" rowspan="2">Autres</td>
+						<td>
+							<img src="Simulateur%20de%20combats_fichiers/mur.png" alt="icone mur">
+						</td>
+						<td>
+							<img src="Simulateur%20de%20combats_fichiers/nbrsimus.gif" alt="icone nombre de simulations" width="28px">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input value="0" id="input_mur" onblur="VerifyMur(this.value);" type="text">
+						</td>
+						<td>
+							<input value="1000" id="input_nbrsimulations" onblur="VerifyNbrSimulations(this.value);" type="text">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody></table>
+				<div class="tbl_bot">
+				</div>
+			</div>
+			
+			<div id="bouton" onclick="Launcher();">Simuler</div>
+			<div id="infos"></div>
+			
+			<div id="tbl_batailles_fin">
+				<div class="tbl_top">
+					<h2 id="gagnant"></h2>
+				</div>
+				<table>
+					<tbody><tr class="">
+						<td class="first_col">Unités</td>
+						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier"></td>
+						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté"></td>
+					</tr>
+					<tr>
+						<td class="first_col">Indemnes</td>
+						<td id="sol_ind"></td>
+						<td id="cat_ind"></td>
+						<td id="bal_ind"></td>
+						<td id="piq_ind"></td>
+						<td id="cav_ind"></td>
+						<td id="arc_ind"></td>
+						<td id="pal_ind"></td>
+						<td id="che_ind"></td>
+						<td id="arm_ind"></td>
+					</tr>
+					<tr>
+						<td class="first_col">Blessés</td>
+						<td id="sol_res"></td>
+						<td id="cat_res"></td>
+						<td id="bal_res"></td>
+						<td id="piq_res"></td>
+						<td id="cav_res"></td>
+						<td id="arc_res"></td>
+						<td id="pal_res"></td>
+						<td id="che_res"></td>
+						<td id="arm_res"></td>
+					</tr>
+					<tr>
+						<td class="first_col">Moyenne PV des blessés</td>
+						<td id="sol_moy"></td>
+						<td id="cat_moy"></td>
+						<td id="bal_moy"></td>
+						<td id="piq_moy"></td>
+						<td id="cav_moy"></td>
+						<td id="arc_moy"></td>
+						<td id="pal_moy"></td>
+						<td id="che_moy"></td>
+						<td id="arm_moy"></td>
+					</tr>
+					<tr>
+						<td class="first_col">Ecart Type</td>
+						<td id="sol_eca"></td>
+						<td id="cat_eca"></td>
+						<td id="bal_eca"></td>
+						<td id="piq_eca"></td>
+						<td id="cav_eca"></td>
+						<td id="arc_eca"></td>
+						<td id="pal_eca"></td>
+						<td id="che_eca"></td>
+						<td id="arm_eca"></td>
+					</tr>
+				</tbody></table>
+				<table id="resultats_moyens">
+					<tbody><tr>
+						<th colspan="6" id="moyenne_th">Moyenne
+					</th></tr>
+					<tr>
+						<td colspan="3" class="sous_th">Victoires</td>
+						<td colspan="3" class="sous_th">Temps</td>
+					</tr>
+					<tr>
+						<td class="sous_sous_th">Attaquant</td>
+						<td class="sous_sous_th">Défenseur</td>
+						<td class="sous_sous_th">Egalité</td>
+						<td class="sous_sous_th">Minimum</td>
+						<td class="sous_sous_th">Moyen</td>
+						<td class="sous_sous_th">Maximum</td>
+					</tr>
+					<tr>
+						<td id="vic_att"></td>
+						<td id="vic_def"></td>
+						<td id="vic_ega"></td>
+						<td id="tps_min"></td>
+						<td id="tps_moy"></td>
+						<td id="tps_max"></td>
+					</tr>
+				</tbody></table>
+
+				<div class="tbl_bot">
+				</div>
+			</div>
+			<div id="options">
+				<div class="tbl_top">
+					<h2>Options</h2>
+				</div>
+				<table>
+					<tbody><tr>
+						<td>Temps entre chaque mise à jour (en ms) ?</td>
+						<td><input value="1000" id="options_tps_maj" onblur="VerifyTpsSim(this.value);" type="text"></td>
+					</tr>
+					<tr>
+						<td>Nombre de mises à jours avant chaque modification de l'exemple ?</td>
+						<td><input value="3" id="options_nbr_maj_ex" onblur="VerifyExemple(this.value);" type="text"></td>
+					</tr>
+					<tr>
+						<td>Indiquer les résultats en % ? (O/N)</td>
+						<td><input value="O" id="options_pourcentage" onblur="VerifyPourcentage(this.value);" type="text"></td>
+					</tr>
+					<tr>
+						<td>Nombre de chiffres après la virgule ?</td>
+						<td><input value="0" id="options_precision" onblur="VerifyPrecision(this.value);" type="text"></td>
+					</tr>
+				</tbody></table>
+				<div class="tbl_bot">
+				</div>
+			</div>
+		</div>
+		<div id="contenu_bot"></div>
+	
+</body></html>
