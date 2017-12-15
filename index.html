@@ -4,16 +4,16 @@
 		<title>Simulateur de combats</title>
 		<meta charset="utf-8">
 		<link rel="icon" type="image/png" href="http://citadelle.byethost22.com/img/favicon.png">
-		<link rel="stylesheet" href="Simulateur%20de%20combats_fichiers/style.css"> 
-		<script src="Simulateur%20de%20combats_fichiers/fonctions.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<script src="fonctions.js"></script>
 		<!--Mémo : Unites[Att,Def][Soldats,Catapultes][Pv,Duel?][n°]-->
 	</head>
 	<body>
 		<header>
 			<ul>
-				<li style="background-image:url('img/simulateur.gif');"><a href="http://citadelle.byethost22.com/index.php">Batailles</a></li>
-				<li style="background-image:url('img/commerce.png');"><a href="http://citadelle.byethost22.com/commerce.php">Commerce</a></li>
-				<li style="background-image:url('img/about.gif');"><a href="http://citadelle.byethost22.com/about.php">À propos</a></li>
+				<li style="background-image:url('img/simulateur.gif');"><a href="/">Batailles</a></li>
+				<li style="background-image:url('img/commerce.png');"><a>Commerce</a></li>
+				<li style="background-image:url('img/about.gif');"><a href="about.html">À propos</a></li>
 				<li style="background-image:url('img/contact.gif');"><a href="http://twinoid.com/user/8646226" target="_blank">Contact</a></li>
 			</ul>
 		</header>
@@ -26,15 +26,15 @@
 				<table>
 					<tbody><tr>
 						<td class="first_col" rowspan="2">Attaquant</td>
-						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier attaquant"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté attaquant"></td>
+						<td><img src="img/sol.png" alt="icone soldat attaquant"></td>
+						<td><img src="img/cat.png" alt="icone catapulte attaquant"></td>
+						<td><img src="img/bal.png" alt="icone baliste attaquant"></td>
+						<td><img src="img/piq.png" alt="icone piquier attaquant"></td>
+						<td><img src="img/cav.png" alt="icone cavalier attaquant"></td>
+						<td><img src="img/arc.png" alt="icone archer attaquant"></td>
+						<td><img src="img/pal.png" alt="icone paladin attaquant"></td>
+						<td><img src="img/che.png" alt="icone chevalier attaquant"></td>
+						<td><img src="img/arm.png" alt="icone archer monté attaquant"></td>
 					</tr>
 					<tr id="ini_att">
 						<td><input autocomplete="off" type="text"></td>
@@ -49,15 +49,15 @@
 					</tr>
 					<tr>
 						<td class="first_col" rowspan="2">Défenseur</td>
-						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier défenseur"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté défenseur"></td>
+						<td><img src="img/sol.png" alt="icone soldat défenseur"></td>
+						<td><img src="img/cat.png" alt="icone catapulte défenseur"></td>
+						<td><img src="img/bal.png" alt="icone baliste défenseur"></td>
+						<td><img src="img/piq.png" alt="icone piquier défenseur"></td>
+						<td><img src="img/cav.png" alt="icone cavalier défenseur"></td>
+						<td><img src="img/arc.png" alt="icone archer défenseur"></td>
+						<td><img src="img/pal.png" alt="icone paladin défenseur"></td>
+						<td><img src="img/che.png" alt="icone chevalier défenseur"></td>
+						<td><img src="img/arm.png" alt="icone archer monté défenseur"></td>
 					</tr>
 					<tr id="ini_def">
 						<td><input autocomplete="off" type="text"></td>
@@ -73,10 +73,10 @@
 					<tr>
 						<td class="first_col" rowspan="2">Autres</td>
 						<td>
-							<img src="Simulateur%20de%20combats_fichiers/mur.png" alt="icone mur">
+							<img src="img/mur.png" alt="icone mur">
 						</td>
 						<td>
-							<img src="Simulateur%20de%20combats_fichiers/nbrsimus.gif" alt="icone nombre de simulations" width="28px">
+							<img src="img/nbrsimus.gif" alt="icone nombre de simulations" width="28px">
 						</td>
 						<td></td>
 						<td></td>
@@ -116,15 +116,15 @@
 				<table>
 					<tbody><tr class="">
 						<td class="first_col">Unités</td>
-						<td><img src="Simulateur%20de%20combats_fichiers/sol.png" alt="icone soldat"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cat.png" alt="icone catapulte"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/bal.png" alt="icone baliste"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/piq.png" alt="icone piquier"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/cav.png" alt="icone cavalier"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arc.png" alt="icone archer"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/pal.png" alt="icone paladin"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/che.png" alt="icone chevalier"></td>
-						<td><img src="Simulateur%20de%20combats_fichiers/arm.png" alt="icone archer monté"></td>
+						<td><img src="img/sol.png" alt="icone soldat"></td>
+						<td><img src="img/cat.png" alt="icone catapulte"></td>
+						<td><img src="img/bal.png" alt="icone baliste"></td>
+						<td><img src="img/piq.png" alt="icone piquier"></td>
+						<td><img src="img/cav.png" alt="icone cavalier"></td>
+						<td><img src="img/arc.png" alt="icone archer"></td>
+						<td><img src="img/pal.png" alt="icone paladin"></td>
+						<td><img src="img/che.png" alt="icone chevalier"></td>
+						<td><img src="img/arm.png" alt="icone archer monté"></td>
 					</tr>
 					<tr>
 						<td class="first_col">Indemnes</td>

@@ -1,0 +1,64 @@
+<html lang="fr" class="gr__citadelle_byethost22_com">
+<head>
+  <title>Simulateur de combats</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="fonctions.js"></script>
+  <style type="text/css"></style>
+  <!--Mémo : Unites[Att,Def][Soldats,Catapultes][Pv,Duel?][n°]-->
+</head>
+<body data-gr-c-s-loaded="true">
+<header>
+  <ul>
+    <li style="background-image:url('img/simulateur.gif');"><a href="index.html">Batailles</a></li>
+    <li style="background-image:url('img/commerce.png');"><a href="commerce.html">Commerce</a></li>
+    <li style="background-image:url('img/about.gif');"><a href="about.html">À propos</a></li>
+    <li style="background-image:url('img/contact.gif');"><a href="http://twinoid.com/user/8646226" target="_blank">Contact</a>
+    </li>
+  </ul>
+</header>
+<div id="contenu_top">
+</div>
+<div id="contenu">
+  <div id="about">
+    <h2>À propos de l'outil permettant d'optimiser son commerce</h2>
+    <h3>Outil en développement</h3>
+    <p>Cet outil n'est pas encore terminé ! Il est là pour être testé mais certains paramètres le prendront au dépourvu
+      (notamment si vous mettez trop peu de soldats par exemple). Vos retours seront plus que jamais bien
+      accueillis.</p>
+    <h3>Formule utilisée</h3>
+    <p>La formule utilisée pour la montée du commerce est celle découverte par BasicBrute disponible par exemple <a
+        href="http://kingdom.muxxu.com/tid/forum#!view/52788|thread/10047481/0">à cette adresse</a>.</p>
+    <br>
+    <h2>À propos de l'algorithme simulant les batailles</h2>
+    <h3>Généralités</h3>
+    <p>L'algorithme imaginé ici essaye de reproduire le plus fidèlement possible une bataille de Kingdom. Il prend par
+      exemple en compte l'évolution du nombre de duels simultanés au cours du temps etc.</p>
+    <p>Le code javascript de ce script est accessible à tous grâce aux outils de développement de votre navigateur
+      (fichier fonctions.js). Si le javascript vous est étranger mais que vous avez une question portant sur
+      l'interprétation du simulateur (par exemple : "le script sélectionne-t-il à chaque fois les deux duelistes
+      aléatoirement ?"), n'hésitez pas à me <a href="http://twinoid.com/user/8646226">contacter</a>.</p>
+    <p>Merci à Simoons pour son énorme contribution à l'amélioration des performances de l'algorithme.</p>
+    <h3>Formules utilisées</h3>
+    <p>Le principal défi à relever pour obtenir un script véritablement fidèle au jeu est de trouver des formules justes
+      dans la mesure où beaucoup de règles ne sont pas officielles et stagnent au stade d'hypothèses.</p>
+    <p>Les formules utilisées par ce script pour déterminer le nombre de duels ainsi que les dégâts infligés à chaque
+      attaque proviennent de la page du <a href="http://twinoid.com/g/ipk">groupe IPK</a> (Infos Pour Kingdom).</p>
+    <br>
+    <h2>À propos de ce site</h2>
+    <p>Ce site n'a rien d'un site officiel, j'ai tenté de le développer pour la communauté bénévolement. Par ailleurs je
+      ne possède aucune des images utilisées et hébergées sur ce site. Elles sont la propriété de <a
+          href="http://twinoid.com/">Twinoid</a>.</p>
+    <p>Enfin, ce site est encore en construction. Je ne suis pas développeur et j'ai conscience du fait que ce script
+      soit très imparfait ; c'est pourquoi si vous avez des remarques, des conseils, des idées pour améliorer le script
+      ou encore si vous souahitez signaler un souci n'hésitez pas à contacter <a href="http://twinoid.com/user/8646226">Reddit</a>.
+    </p>
+  </div>
+</div>
+<div id="contenu_bot">
+</div>
+
+<div class="grammarly-disable-indicator"></div>
+</body>
+</html>
